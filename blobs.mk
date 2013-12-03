@@ -26,13 +26,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
-## RIL
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/kyleopen/bin/rild:system/bin/rild \
-#    vendor/samsung/kyleopen/lib/libril.so:system/lib/libril.so \
-#    vendor/samsung/kyleopen/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
-#    vendor/samsung/kyleopen/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
-
 ## Graphics
 PRODUCT_COPY_FILES += \
     vendor/samsung/kyleopen/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
@@ -45,4 +38,49 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/kyleopen/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     vendor/samsung/kyleopen/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
     vendor/samsung/kyleopen/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
+    
+## RIL & Various
+PRODUCT_COPY_FILES += \
+    vendor/samsung/kyleopen/bin/netmgrd:system/bin/netmgrd \
+    vendor/samsung/kyleopen/bin/qmiproxy:system/bin/qmiproxy \
+    vendor/samsung/kyleopen/bin/qmuxd:system/bin/qmuxd \
+    vendor/samsung/kyleopen/bin/rild:system/bin/rild \
+    vendor/samsung/kyleopen/bin/sec-ril:system/bin/sec-ril \
+    vendor/samsung/kyleopen/lib/libauth.so:system/lib/libauth.so \
+    vendor/samsung/kyleopen/lib/libcm.so:system/lib/libcm.so \
+    vendor/samsung/kyleopen/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/kyleopen/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    vendor/samsung/kyleopen/lib/libdsm.so:system/lib/libdsm.so \
+    vendor/samsung/kyleopen/lib/libdsutils.so:system/lib/libdsutils.so \
+    vendor/samsung/kyleopen/lib/libidl.so:system/lib/libidl.so \
+    vendor/samsung/kyleopen/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    vendor/samsung/kyleopen/lib/libnv.so:system/lib/libnv.so \
+    vendor/samsung/kyleopen/lib/liboncrpc.so:system/lib/liboncrpc.so \
+    vendor/samsung/kyleopen/lib/libpbmlib.so:system/lib/libpbmlib.so \
+    vendor/samsung/kyleopen/lib/libqdi.so:system/lib/libqdi.so \
+    vendor/samsung/kyleopen/lib/libqdp.so:system/lib/libqdp.so \
+    vendor/samsung/kyleopen/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/samsung/kyleopen/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/samsung/kyleopen/lib/libqueue.so:system/lib/libqueue.so \
+    vendor/samsung/kyleopen/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/kyleopen/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
+    vendor/samsung/kyleopen/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/kyleopen/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    vendor/samsung/kyleopen/lib/libwms.so:system/lib/libwms.so \
+    vendor/samsung/kyleopen/lib/libwmsts.so:system/lib/libwmsts.so 
+    
+## Camera
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/kyleopen/lib/hw/camera.msm7627a.so:system/lib/hw/camera.msm7627a.so \
+#    vendor/samsung/kyleopen/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+#    vendor/samsung/kyleopen/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+    
+## Sensors
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/kyleopen/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+#    vendor/samsung/kyleopen/etc/calib.dat:system/etc/calib.dat \
+#    vendor/samsung/kyleopen/etc/sensors.dat:system/etc/sensors.dat
+    
+PRODUCT_COPY_FILES += \
+    vendor/samsung/kyleopen/lib/libqc-opt.so:system/lib/libqc-opt.so
 
